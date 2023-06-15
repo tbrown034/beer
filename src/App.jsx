@@ -8,20 +8,20 @@ function App() {
   const [message, setMessage] = useState("");
 
   return (
-    <main className="flex flex-col custom-background text-gray-200 min-h-screen p-20 justify-between items-center">
+    <main className="flex flex-col custom-background text-gray-400 min-h-screen  justify-around p-4">
       <div className="flex flex-col justify-center items-center gap-4 ">
-        <h1 className="text-8xl font-bold">Hello Beer</h1>
+        <h1 className="text-6xl font-bold">Hello Beer</h1>
         <h2 className="text-2xl">A simple API to discover new breweries</h2>
       </div>
-      <div className="text-4xl  text-center space-y-4">
-        <h1>Find a Random Brewery</h1>
+      <div className=" text-center space-y-4">
+        <h1 className="text-4xl font-semibold">Find Random Brewery</h1>
         <button className="bg-orange-700 bg-opacity-200 hover:bg-opacity-80 rounded-lg p-4">
           Get Random
         </button>
       </div>
       <div>
-        <form className="flex  flex-col gap-8 text-4xl p-4 rounded-lg text-center font-bold">
-          <h3 className="p-2">Contact Us:</h3>
+        <form className="flex  flex-col gap-2  p-4 rounded-lg text-center font-bold">
+          <h3 className="text-2xl">Contact Us:</h3>
           <input
             placeholder="Name"
             id="name"
