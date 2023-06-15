@@ -13,9 +13,15 @@ function App() {
         <h1 className="text-8xl font-bold">Hello Beer</h1>
         <h2 className="text-2xl">A simple API to discover new breweries</h2>
       </div>
+      <div className="text-4xl  text-center space-y-4">
+        <h1>Find a Random Brewery</h1>
+        <button className="bg-orange-700 bg-opacity-200 hover:bg-opacity-80 rounded-lg p-4">
+          Get Random
+        </button>
+      </div>
       <div>
-        <form className="flex flex-col gap-4 text-4xl p-4 rounded-lg text-center font-bold">
-          <h3 className="">Contact Us:</h3>
+        <form className="flex  flex-col gap-8 text-4xl p-4 rounded-lg text-center font-bold">
+          <h3 className="p-2">Contact Us:</h3>
           <input
             placeholder="Name"
             id="name"
@@ -48,7 +54,7 @@ function App() {
             className="p-2 rounded-xl text-black font-bold"
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button className="bg-orange-700 bg-opacity-50 hover:bg-opacity-80">
+          <button className="bg-orange-700 bg-opacity-200 hover:bg-opacity-80 rounded-lg p-4">
             Send
           </button>
         </form>
